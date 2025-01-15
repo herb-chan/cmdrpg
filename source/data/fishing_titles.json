@@ -3,84 +3,108 @@
         "title": "Novice Fisherman",
         "required_level": 1,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Apprentice Fisherman",
         "required_level": 5,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Journeyman Fisherman",
         "required_level": 10,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Adept Fisherman",
         "required_level": 20,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Expert Fisherman",
         "required_level": 30,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Master Fisherman",
         "required_level": 40,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Grandmaster Fisherman",
         "required_level": 50,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Legendary Fisherman",
         "required_level": 60,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Mythical Fisherman",
         "required_level": 70,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Divine Fisherman",
         "required_level": 80,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Celestial Fisherman",
         "required_level": 90,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     },
     {
         "title": "Eternal Fisherman",
         "required_level": 100,
         "perks": {
-            "fishing_speed": 1
+            "fishing_speed": 1,
+            "fishing_wisdom": 0.01,
+            "fishing_treasure_find": 0.25
         }
     }
 ]
