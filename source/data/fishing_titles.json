@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Novice Fisherman",
+        "required_level": 1,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Apprentice Fisherman",
+        "required_level": 5,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Journeyman Fisherman",
+        "required_level": 10,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Adept Fisherman",
+        "required_level": 20,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Expert Fisherman",
+        "required_level": 30,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Master Fisherman",
+        "required_level": 40,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Grandmaster Fisherman",
+        "required_level": 50,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Legendary Fisherman",
+        "required_level": 60,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Mythical Fisherman",
+        "required_level": 70,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Divine Fisherman",
+        "required_level": 80,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Celestial Fisherman",
+        "required_level": 90,
+        "perks": {
+            "fishing_speed": 1
+        }
+    },
+    {
+        "title": "Eternal Fisherman",
+        "required_level": 100,
+        "perks": {
+            "fishing_speed": 1
+        }
+    }
+]
