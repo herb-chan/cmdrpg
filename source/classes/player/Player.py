@@ -3,7 +3,7 @@ from classes.utils.Formulas import Formulas
 from classes.utils.Data import Data
 
 class Player:
-    def __init__(self, name, fishing_speed, fishing_wisdom, fishing_treasure_find, title, level, exp, gold, inventory, equipment):
+    def __init__(self, name, fishing_speed, fishing_wisdom, fishing_treasure_find, title, level, exp, gold, inventory, equipment, applied_titles=None):
         self.name = name
         self.fishing_speed = fishing_speed
         self.fishing_wisdom = fishing_wisdom
@@ -15,7 +15,7 @@ class Player:
         self.inventory = inventory
         self.equipment = equipment
         self.titles = Data.load_fishing_titles()
-        self.applied_titles = set()
+        self.applied_titles = set(applied_titles) if applied_titles else set()
 
     @classmethod
     def from_profile(cls):
@@ -30,7 +30,8 @@ class Player:
             profile['exp'],
             profile['gold'],
             profile['inventory'],
-            profile['equipment']
+            profile['equipment'],
+            profile.get('applied_titles', [])
         )
 
     def save_profile(self):
@@ -44,7 +45,8 @@ class Player:
             'exp': self.exp,
             'gold': self.gold,
             'inventory': self.inventory,
-            'equipment': self.equipment
+            'equipment': self.equipment,
+            'applied_titles': list(self.applied_titles)
         }
         Data.save_profile(player_data)
 

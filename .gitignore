@@ -6,7 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# Tests
 source/tests/*
+
+# Player save
+source/data/player.json
 
 # Distribution / packaging
 .Python

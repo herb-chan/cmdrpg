@@ -8,5 +8,6 @@
     "exp": 0,
     "gold": 100,
     "inventory": [],
-    "equipment": []
+    "equipment": [],
+    "applied_titles": []
 }
