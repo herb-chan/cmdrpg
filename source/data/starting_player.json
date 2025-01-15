@@ -1,0 +1,12 @@
+{
+    "name": "New Player",
+    "fishing_speed": 1,
+    "fishing_wisdom": 1,
+    "fishing_treasure_find": 1,
+    "title": "Novice Fisherman",
+    "level": 1,
+    "exp": 0,
+    "gold": 100,
+    "inventory": [],
+    "equipment": []
+}

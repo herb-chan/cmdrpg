@@ -17,6 +17,37 @@ class Player:
         self.titles = Data.load_fishing_titles()
         self.applied_titles = set()
 
+    @classmethod
+    def from_profile(cls):
+        profile = Data.load_profile()
+        return cls(
+            profile['name'],
+            profile['fishing_speed'],
+            profile['fishing_wisdom'],
+            profile['fishing_treasure_find'],
+            profile['title'],
+            profile['level'],
+            profile['exp'],
+            profile['gold'],
+            profile['inventory'],
+            profile['equipment']
+        )
+
+    def save_profile(self):
+        player_data = {
+            'name': self.name,
+            'fishing_speed': self.fishing_speed,
+            'fishing_wisdom': self.fishing_wisdom,
+            'fishing_treasure_find': self.fishing_treasure_find,
+            'title': self.title,
+            'level': self.level,
+            'exp': self.exp,
+            'gold': self.gold,
+            'inventory': self.inventory,
+            'equipment': self.equipment
+        }
+        Data.save_profile(player_data)
+
     def __str__(self):
         return f"{self.name} {self.title} ({self.level})"
 
@@ -37,6 +68,7 @@ class Player:
     def level_up(self):
         self.level += 1
         self.update_title()
+        self.gain_gold(Formulas().gold_per_level_up_formula(self.level))
         print(f"{str(self)} leveled up to level {self.level}")
 
     def gain_exp(self, exp):
@@ -44,6 +76,9 @@ class Player:
         while self.exp >= self.exp_needed():
             self.exp -= self.exp_needed()
             self.level_up()
+
+    def gain_gold(self, gold):
+        self.gold += gold
 
     def exp_needed(self):
         return Formulas().level_formula(self.level, self.fishing_wisdom)
